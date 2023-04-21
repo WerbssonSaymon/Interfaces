@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}	
+body {
+    background: url(https://thumbs.dreamstime.com/b/cor-rosa-e-p%C3%BArpura-cores-abstratas-forma-o-conceito-de-fundo-moderno-design-novas-formas-papel-parede-wallpaper-backdrop-224658525.jpg) no-repeat;
+    background-size: cover;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.smartphone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+    background: url(https://s-media-cache-ak0.pinimg.com/564x/fd/e4/e0/fde4e0a929fb8d46812c6f1f3d26505b.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    border: 10px solid black;
+}
+.nav-bar {
+    position: absolute;
+    display: flex;
+    margin-bottom: 575px;
+    margin-left: 190px;
+}
+.icon-top {
+    color: white;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.hour p {
+    text-align: center;
+    font-size: 44pt;
+    color: white;
+}
+.blocked {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 575px; 
+}
+.icon-lock {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
