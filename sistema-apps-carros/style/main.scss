@@ -1,0 +1,54 @@
+$color1: #808080;
+$color2: #0b0a0a;
+$color3: #ffffff;
+$color4: transparent;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@each $border-color in red, green, blue, yellow, purple, pink, orange {
+    .#{$border-color}-btn { border: 10px solid $border-color;}
+}
+
+@each $color in red, green, blue, yellow, purple, pink, orange {
+    .#{$color}-icon { color: $color;}
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: $color1;
+    width: 100vw;
+    height: 100vh;
+    @include flex;
+}
+
+.app {
+    background-color: $color2;
+    color: $color3;
+    width: 900px;
+    height: 600px;
+
+    .row {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        @include flex;
+
+        button {
+            padding: 50px 100px;
+            cursor: pointer;
+            background-color: $color4;
+
+            ion-icon {
+                font-size: 80px;
+            }
+        }
+    }
+}
