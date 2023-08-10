@@ -2,6 +2,8 @@ $color1: #808080;
 $color2: #0b0a0a;
 $color3: #ffffff;
 $color4: transparent;
+$color5: rgb(247,247,247);
+$color6: radial-gradient(circle, rgba(247,247,247,1) 0%, rgba(0,0,0,1) 21%);
 
 @mixin flex {
     display: flex;
@@ -10,12 +12,22 @@ $color4: transparent;
 }
 
 @each $border-color in red, green, blue, yellow, purple, pink, orange {
-    .#{$border-color}-btn { border: 10px solid $border-color;}
+    .#{$border-color}-btn { border: 8px solid $border-color;}
 }
 
 @each $color in red, green, blue, yellow, purple, pink, orange {
     .#{$color}-icon { color: $color;}
 }
+
+@keyframes down-up {
+    from {
+      padding: 35px 70px;
+    }
+  
+    to {
+      padding: 50px 95px;
+    }
+  }
 
 * {
     box-sizing: border-box;
@@ -30,21 +42,37 @@ body {
 }
 
 .app {
-    background-color: $color2;
+    background: $color6;
     color: $color3;
-    width: 900px;
-    height: 600px;
+    width: 950px;
+    height: 700px;
+
+    .hero {
+        background-color: $color3;
+        width: 950px;
+        height: 60px;
+
+        span {
+            color: $color2;
+        }
+    }
 
     .row {
         width: 100%;
         height: 200px;
-        margin: 0 auto;
+        margin: 10px auto;
         @include flex;
 
         button {
-            padding: 50px 100px;
+            padding: 45px 90px;
             cursor: pointer;
             background-color: $color4;
+            margin: auto 10px;
+
+            &:hover {
+                animation-duration: 1.3s;
+                animation-name: down-up;
+            }
 
             ion-icon {
                 font-size: 80px;

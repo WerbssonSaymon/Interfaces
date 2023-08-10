@@ -1,29 +1,29 @@
 .red-btn {
-  border: 10px solid red;
+  border: 8px solid red;
 }
 
 .green-btn {
-  border: 10px solid green;
+  border: 8px solid green;
 }
 
 .blue-btn {
-  border: 10px solid blue;
+  border: 8px solid blue;
 }
 
 .yellow-btn {
-  border: 10px solid yellow;
+  border: 8px solid yellow;
 }
 
 .purple-btn {
-  border: 10px solid purple;
+  border: 8px solid purple;
 }
 
 .pink-btn {
-  border: 10px solid pink;
+  border: 8px solid pink;
 }
 
 .orange-btn {
-  border: 10px solid orange;
+  border: 8px solid orange;
 }
 
 .red-icon {
@@ -54,6 +54,14 @@
   color: orange;
 }
 
+@keyframes down-up {
+  from {
+    padding: 35px 70px;
+  }
+  to {
+    padding: 50px 95px;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -69,23 +77,36 @@ body {
 }
 
 .app {
-  background-color: #0b0a0a;
+  background: radial-gradient(circle, rgb(247, 247, 247) 0%, rgb(0, 0, 0) 21%);
   color: #ffffff;
-  width: 900px;
-  height: 600px;
+  width: 950px;
+  height: 700px;
+}
+.app .hero {
+  background-color: #ffffff;
+  width: 950px;
+  height: 60px;
+}
+.app .hero span {
+  color: #0b0a0a;
 }
 .app .row {
   width: 100%;
   height: 200px;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .app .row button {
-  padding: 50px 100px;
+  padding: 45px 90px;
   cursor: pointer;
   background-color: transparent;
+  margin: auto 10px;
+}
+.app .row button:hover {
+  animation-duration: 1.3s;
+  animation-name: down-up;
 }
 .app .row button ion-icon {
   font-size: 80px;
