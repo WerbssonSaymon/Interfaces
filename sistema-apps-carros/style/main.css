@@ -86,9 +86,18 @@ body {
   background-color: #ffffff;
   width: 950px;
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
 }
-.app .hero span {
+.app .hero h1 {
   color: #0b0a0a;
+  margin-left: 10px;
+}
+.app .hero h2 {
+  color: #0b0a0a;
+  margin-right: 10px;
 }
 .app .row {
   width: 100%;

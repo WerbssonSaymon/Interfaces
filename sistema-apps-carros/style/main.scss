@@ -51,9 +51,17 @@ body {
         background-color: $color3;
         width: 950px;
         height: 60px;
+        @include flex;
+        justify-content: space-between;
 
-        span {
+        h1 {
             color: $color2;
+            margin-left: 10px;
+        }
+
+        h2 {
+            color: $color2;
+            margin-right: 10px;
         }
     }
 

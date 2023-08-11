@@ -1,1 +1,1 @@
-Projeto usando SCSS, Ion-icons e javascript 
+Projeto usando SCSS, Animações CSS, Ion-icons e Javascript 
